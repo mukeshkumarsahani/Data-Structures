@@ -31,7 +31,7 @@ public:
 	void displayDetail();
 	int deleteHead();
 	int deleteTail();
-	node* find(int,node**);
+	node* find(int, node**);
 	int deleteTarget(int);
 	void printReverse();
 	void reverse(node*);
@@ -175,7 +175,7 @@ int linkedList :: deleteHead()
 		return -9999;
 	}
 	int target = head->data;
-	node *first; //first is the node to be freed
+	node *first;                                                   //first is the node to be freed
 	if(nodeCount==1)
 	{
 		head=NULL;
@@ -226,9 +226,9 @@ int linkedList :: deleteTarget(int target)
 	current = find(target,&prevNode);
 	if(current==NULL)
 		return -9999;
-	else if(current == head)
+	else if (current == head)
 		return deleteHead();
-	else if(current == tail)
+	else if (current == tail)
 		return deleteTail();
 	else
 	{

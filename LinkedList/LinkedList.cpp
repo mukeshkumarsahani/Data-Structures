@@ -21,9 +21,9 @@ class linkedList
 public:
     	linkedList()
     	{
-        	head=NULL;
-        	tail=NULL;
-		nodeCount=0;
+        	head = NULL;
+        	tail = NULL;
+		nodeCount = 0;
     	}
     	void insertAtHead(int);
 	void insertAtTail(int);

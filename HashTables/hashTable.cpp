@@ -15,6 +15,7 @@ public:
 	{
 		for (int i=0; i<SIZE;i++)
 		{
+			/* Making all string to NULL */
 			strcpy(keys[i],"\0");
 		}
 	}
@@ -32,8 +33,10 @@ void hashTable :: get()
 	
 	while (strcmp(keys[index],"\0") != 0)
 	{
+		/* Loop runs till it gets an NULL string */
 		if (strcmp(keys[index], key) == 0)
 		{
+			/* If an already present key is again given */
 			cout<<"Item found!"<<endl;
 			cout<<"Value of entered key is: "<<values[index]<<endl;
 			return;
@@ -55,6 +58,7 @@ void hashTable :: put()
 	int value;
 	while (strcmp(keys[index],"\0") != 0)
 	{
+		/* Loop runs till it gets an NULL string */
 		if (strcmp(keys[index], key) == 0)
 		{
 			/* If an already present key is again given */

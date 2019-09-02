@@ -19,7 +19,7 @@ set <char> suits {'a', 'b', 'c', 'd'};
 
 + A set may or may not be in contiguous memory.
 + Suits.begin() points to the first element of the set and Suits.end() points to a position one element after the last element.
-![6.png](Set)
+![Set](6.png)
 
 + Another method  to use an iterator is-
 ```c++
@@ -29,7 +29,7 @@ OR
 
 auto it = vec.begin();  //More often used
 ```
-![7.png](Iterator operations)
+![Iterator operations](7.png)
 
 ```c++
 vector<int> vec {1, 2, 3};
@@ -52,7 +52,7 @@ for (auto it=vec.begin(); it != vec.end(); it++)
 ```
 
 + Now for a set-
-![8.png](In case of set)
+![In case of set](8.png)
 
 + Now for a reverse iterator-
 > Note that `it++` will decrement the pointer, if we have {1, 2, 3, 4} and vec.rbegin() points to 4 and on `i++` it will point to 3.
@@ -68,7 +68,7 @@ std::cout << *it << " ";
 ```
 
 + Other iterators-
-![9.png](Other)
+![Other](9.png)
 
 + To refer to the last element, we can do as follows-
 ```c++
@@ -137,20 +137,20 @@ while (start != finish)
 + To use STL algorithms we need to include `<algorithm>`
 
 + Iterator invalidation-
-![10.png](Invalidation)
+![Invalidation](10.png)
 
 + **Find Algorithm-**
-![11.png](find)
+![find](11.png)
 
 In above code, find tries to find element `3`, if it finds it, it will return an iterator pointing to 3 else it will point to the end of the container. We want to iterate from the beginning to the end of the container.
 
 > Note that it returns the first occurence of the container.
 
 + If we want to use find for our own data types, we need to overload `==` operator-
-![12.png](find)
+![find](12.png)
 
 + **for_each-**
-![13.png](For Each)
+![For Each](13.png)
 
 + *Let's learn functor-*
 ```c++
@@ -314,7 +314,7 @@ cout<<"Sum= "<<sum<<endl;
 --- 
 
 # Vectors-
-![14.png](Vector)
+![Vector](14.png)
 
 + We add element using `push_back()` method.
 + Inserting element other than `back` is done in linear time complexity.
